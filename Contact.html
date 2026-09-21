@@ -5,30 +5,34 @@
     <title>Informasi Kontak</title>
   </head>
   <body>
-    <h1>INFORMASI KONTAK</h1>
+    <h1 id="judul-utama">INFORMASI KONTAK</h1>
+    <link rel="stylesheet" href="../Projek web/contact.css" />
+
     <p>
       Jika anda ingin berdikusi atau bekerjasama dengan saya, Silahkan hubungi
       saya melalui from berrikut <br />Anda juga dapat mengirim Email ke
-      <a href="mailto:fdhlns01@student.upi.edu">fdhlns01@student.upi.edu</a
+      <a class="kontak-link" href="mailto:fdhlns01@student.upi.edu">fdhlns01@student.upi.edu</a
       ><br />
     </p>
-    <nav>
-      <a href="Home.html">Home</a> | <a href="About.html">About</a> |
-      <a href="Project.html">Project</a> | <a href="Contact.html">Contact</a>
-      <a href="Experience.html">Experience</a>
+
+    <nav class="navbar">
+      <a class="nav-link" href="index.html">Home</a> | <a class="nav-link" href="About.html">About</a> |
+      <a class="nav-link" href="Project.html">Project</a> | <a class="nav-link" href="Contact.html">Contact</a> |<a class="nav-link" href="Experience.html">Experience</a>
     </nav>
     <hr />
   </body>
   <body>
+
     <h2>Form Diskusi</h2>
-    <table border="1" cellpadding="10" cellspacing="0">
+
+    <table id="tabel-kontak" border="1" cellpadding="10" cellspacing="0">
       <tr>
         <th colspan="3">From Data Kontak</th>
       </tr>
       <tr></tr>
       <tr>
         <th>
-          <form action="#" method="post" enctype="multipart/form-data"></form>
+          <form action="#" method="post" enctype="multipart/form-data">
           <label for="nama">Nama Lengkap </label>
         </th>
         <td>
@@ -61,7 +65,8 @@
         <th>
           <label for="Jenis Kelamin">Jenis Kelamin</label>
         </th>
-        <td>
+        <td class="radio-group">
+          <span>
           <input
             type="radio"
             id="laki-laki"
@@ -70,8 +75,11 @@
             required
           />
           <label for="laki-laki">Laki-laki</label>
+          </span>
+          <span>
           <input type="radio" id="perempuan" name="jenis_kelamin" value="P" />
           <label for="perempuan">Perempuan</label><br /><br />
+          </span>
         </td>
       </tr>
       <tr>
@@ -87,7 +95,7 @@
           <label for="Topik Pesanan">Topik Pesanan</label>
         </th>
         <td>
-          <select name="topik">
+          <select id="topik" name="topik">
           <option value="Diskusi">Diskusi</option> >
           <option value="Kerja Sama" >Kerja Sama</option>
           <option value="Lainnya" >Lainnya</option>
@@ -97,7 +105,8 @@
         <th>
           <label for="Jenis Pesan">Jenis Pesan</label>
         </th>
-       <td>
+       <td class="radio-group">
+        <span>
           <input
             type="radio"
             name="jenis_Pesan"
@@ -105,10 +114,15 @@
             required
           />
           <label for="Pertanyaan">Pertanyaan</label>
+          </span>
+          <span>
           <input type="radio" name="jenis_Pesan" value="Saran" />
           <label for="Saran">Saran</label>
+          </span>
+          <span>
           <input type="radio" name="jenis_Pesan" value="Lainnya"/>
           <label for="Lainnya">Lainnya</label><br /><br />
+          </span>
        </td>
         </tr>
         <tr>
@@ -116,7 +130,7 @@
             <label for="Pesan">Pesan</label>
           </th>
           <td>
-            <textarea name="Pesan"></textarea>
+            <textarea id="pesan" name="Pesan"></textarea>
           </td>
         </tr>
         <tr>
@@ -135,8 +149,10 @@
           </td>
         </tr>
     </table>
+    </form>
+
     <hr />
-    <p>
+    <p class="footer-text">
       &copy; 2026 Fadhil Nurshiddiq. Di Buat Menggunakan HTML Serta Dengan Suka
       Cita
     </p>

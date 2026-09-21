@@ -5,36 +5,49 @@
     <title>Personal Website</title>
   </head>
   <body>
-    <h1>PERSONAL WEBSITE</h1>
+    <h1 id="judul">PERSONAL WEBSITE</h1>
     <p>Selamat Datang Di Website Saya, Semoga Harimu Menyenangkan</p>
-    <nav>
-      <a href="Home.html">Home</a> | <a href="About.html">About</a> |
-      <a href="Project.html">Project</a> | <a href="Contact.html">Contact</a>
-      <a href="Experience.html">Experience</a>
+    <link rel="stylesheet" href="../Projek web/index.css" />
+
+    <nav class="navbar">
+      <a class="nav-link" href="index.html">Home</a> | <a class="nav-link" href="About.html">About</a> |
+      <a class="nav-link" href="Project.html">Project</a> | <a class="nav-link" href="Contact.html">Contact</a> |<a class="nav-link" href="Experience.html">Experience</a>
     </nav>
     <hr />
+
     <h1>Hola, Saya Fadhil Nurshiddiq</h1>
-    <img src="IMG_8656.JPG" alt="Foto pribadi" width="240" />
-    <p>
-      Saya Adalah Seorang Mahasiswa Yang sedang Tahap Pembelajran Pengembangan
-      Web.<br/>Website Ini Dibuat Sebagai Latihan Menggunkan HTML dasar dan CSS.</br>
-    </p>
-    <p>Di Website Ini Anda Dapat Mengenal Saya, Melihat Beberapa Project, Serta Menghubngi Saya Melalui Halaman Contact.</p>
+    <img 
+    src="IMG_8656.JPG"
+    id="profil"
+    alt="Foto pribadi"
+    class="profil-img"
+    />
+
+    <div class="deskripsi">
+      <p>
+        Saya Adalah Seorang Mahasiswa Yang sedang Tahap Pembelajran Pengembangan
+        Web.<br/>Website Ini Dibuat Sebagai Latihan Menggunkan HTML dasar dan CSS.</br>
+      </p>
+      <p>Di Website Ini Anda Dapat Mengenal Saya, Melihat Beberapa Project, Serta Menghubngi Saya Melalui Halaman Contact.</p>
+    
     <h2>YANG SAYA SEDANG PELAJARI</h2>
-    <ul> 
+    <ul class="skill-list"> 
       <li>HTML.</li>
       <li>Algoritma Pemograman.</li>
       <li>Basis Data</li>
       <li>Git Dan GITHUB</li>
     </ul>
+     </div>
+
     <nav>
       <p>
-        Silahkan Anda Kunjungi Halaman <a href="About.html">About</a> Untuk
+        Silahkan Anda Kunjungi Halaman <a class="nav-link" href="About.html">About</a> Untuk
         mengetahui Lebih Lanjut Tentang Diri Pribadi Saya
       </p>
       <hr />
     </nav>
-    <p>
+
+    <p class="footer">
       &copy; 2026 Fadhil Nurshiddiq. Di Buat Menggunakan HTML Serta Dengan Suka
       Cita
     </p>

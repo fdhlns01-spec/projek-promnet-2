@@ -5,11 +5,15 @@
     <title>Personal Website</title>
   </head>
   <body>
-    <h1>ABOUT ME</h1>
-    <nav>
-      <a href="Home.html">Home</a> | <a href="About.html">About</a> |
-      <a href="Project.html">Project</a> | <a href="Contact.html">Contact</a>
-      <a href="Experience.html">Experience</a>
+    <h1 id="judul">ABOUT ME</h1>
+    <link rel="stylesheet" href="../Projek web/About.css" />
+
+    <nav class="navbar">
+      <a class="nav-link" href="index.html">Home</a> |
+      <a class="nav-link" href="About.html">About</a> |
+      <a class="nav-link" href="Project.html">Project</a> |
+      <a class="nav-link" href="Contact.html">Contact</a> |
+      <a class="nav-link" href="Experience.html">Experience</a>
     </nav>
     <hr />
     <h1>Profil singkat</h1>
@@ -24,7 +28,7 @@
       Membuat Website Yang Bermanfaat Dan Mudah Digunakan.<br />
     </p>
     <h2>Data Diri</h2>
-    <table border="2" cellpadding="8" cellspacing="3">
+    <table id="tabel-data" border="2" cellpadding="8" cellspacing="3">
       <tr>
         <th>Data</th>
         <th>Keterangan</th>
@@ -48,26 +52,28 @@
       <tr>
         <td>Email</td>
         <td>
-          <a href="mailto:fdhlns01@student.upi.edu">fdhlns01@student.upi.edu</a>
+          <a class="kontak-link" href="mailto:fdhlns01@student.upi.edu"
+            >fdhlns01@student.upi.edu</a
+          >
         </td>
       </tr>
     </table>
     <h2>Hobi Saya</h2>
-    <ol>
+    <ol class="hobi-list">
       <li>Bermian Badminton</li>
       <li>Mendengarkan Musik</li>
       <li>Bermain Game Online</li>
       <li>Belajar</li>
     </ol>
     <h2>Riwayat Pendidikan</h2>
-    <ul>
+    <ul class="riwayat-list">
       <li>SDN Benteng - 2019</li>
       <li>SMPN 1 Campaka - 2022</li>
       <li>SMAN 1 Campaka - 2025</li>
       <li>Universitas Pendidikan Indonesia - Sekarang</li>
     </ul>
     <hr />
-    <p>
+    <p class="footer-text">
       &copy; 2026 Fadhil Nurshiddiq. Di Buat Menggunakan HTML Serta Dengan Suka
       Cita
     </p>
